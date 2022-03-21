@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SeAmostre</title>
+    <meta name="description" content="Um ambiente criado para cadastro de perfis pessoais criando cards dos usuários">
+    <meta name="author" content="Micheli Pinheiro">
+    <meta name="author" content="Edmundo">
+    <meta name="author" content="Kauana">
+    <meta name="author" content="Roberta">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>🔥 Se Amostre 🔥</h1>
+    <div class="SeAmostre-form">
+        <form id="SeAmostre-form">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" placeholder="Escreva seu nome"><br>
+    
+            <label for="interesses">Interesses:</label><br>
+            <textarea name="Interesses" rows="3" cols="30" placeholder="Fale sobre você..."></textarea><br>
+                
+            <label for="url">Insira uma foto sua:</label><br>
+            <input type="url" name="url" id="url" placeholder="Link da sua foto"><br>
+            
+            <label for="btn">
+            <button type="submit" onclick="alert('Agora você será amostrado!')">Se Amostrar</button>
+    
+        </form>
+    </div>
+    
+    <div id="cards">
+        <h2>Confira nossos Amostrados</h2>
+        <section class="card">
+            <h3 class="nome-card"></h3>
+            <p class="interesse-card"></p>
+            <img class="foto-card">
+        </section>
+    </div>
+
+    <script src="eventos.js"></script>
+
+</body>
+</html>
+
